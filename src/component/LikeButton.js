@@ -10,9 +10,9 @@ function LikeButton({ likeCount, postId, likes, userName }) {
     if (userName && likes.find((like) => (like) => like.userName === userName))
       setLiked(true);
   }, [userName, likes]);
-  const [likePostMutation, { error }] = useMutation(likePost, {
+  const [likePostMutation] = useMutation(likePost, {
     variables: { postId: postId },
-    update(_, result) {
+    update() {
       if (liked) setLiked(false);
       else setLiked(true);
     },

@@ -1,6 +1,6 @@
 import { useMutation } from "@apollo/client";
 import React, { useRef } from "react";
-import { Button, Card, Form } from "semantic-ui-react";
+import { Card } from "semantic-ui-react";
 import { createComment, getPost } from "../queries/queries";
 import { useForm } from "../util/customHook";
 

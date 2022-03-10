@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import React, { useContext } from "react";
 import { getPosts } from "../queries/queries";
-import { Grid, Image, Transition } from "semantic-ui-react";
+import { Grid, Transition } from "semantic-ui-react";
 import PostCard from "../component/PostCard";
 import { AuthContext } from "../context/auth";
 import AddPost from "../component/AddPost";

@@ -8,7 +8,7 @@ import {
 import { Container } from "semantic-ui-react";
 import "./App.css";
 import MenuBar from "./component/menuBar";
-import { AuthContext, AuthProvider } from "./context/auth";
+import { AuthContext} from "./context/auth";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import PostDetails from "./pages/PostDetails";

@@ -13,7 +13,6 @@ function PostCard({ post }) {
   const commentCount = comments.length;
   const { user } = useContext(AuthContext);
 
-  const deletePostHandler = () => {};
   return (
     <Card fluid>
       <Card.Content>
@@ -52,8 +51,6 @@ function PostCard({ post }) {
             <Button
               as="div"
               labelPosition="right"
-              as={Link}
-              to={`/posts/${id}`}
             >
               <Button color="blue" basic>
                 <Icon name="comments" />
