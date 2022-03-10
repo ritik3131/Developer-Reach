@@ -26,6 +26,7 @@ function Login() {
       navigate("/");
     },
     onError(err) {
+      console.log("Login", err);
       setError(JSON.parse(err.graphQLErrors[0].message));
     },
     variables: values,
