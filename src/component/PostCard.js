@@ -48,7 +48,7 @@ function PostCard({ post }) {
           inverted
           position="right center"
           trigger={
-            <Button as="div" labelPosition="right">
+            <Button as={Link} to={`/posts/${id}`} labelPosition="right">
               <Button color="blue" basic>
                 <Icon name="comments" />
               </Button>
