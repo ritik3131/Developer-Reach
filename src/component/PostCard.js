@@ -17,7 +17,7 @@ function PostCard({ post }) {
     <Card fluid>
       <Card.Content>
         <Popup
-          content={userName === user.name && user.email}
+          content={user && userName === user.name && user.email}
           key={userName}
           header={userName}
           position="top center"
@@ -48,10 +48,7 @@ function PostCard({ post }) {
           inverted
           position="right center"
           trigger={
-            <Button
-              as="div"
-              labelPosition="right"
-            >
+            <Button as="div" labelPosition="right">
               <Button color="blue" basic>
                 <Icon name="comments" />
               </Button>

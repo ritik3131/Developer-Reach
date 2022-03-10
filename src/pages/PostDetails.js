@@ -42,7 +42,7 @@ function PostDetails() {
       <Grid.Row>
         <Grid.Column width={2}>
           <Popup
-            content={userName === user.name && user.email}
+            content={user && userName === user.name && user.email}
             key={userName}
             header={userName}
             trigger={
